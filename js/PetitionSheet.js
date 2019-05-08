@@ -296,6 +296,10 @@ function update_envelope() {
     receiver_name = '';
 
     county = $("select#county").val();
+    receiver_zipcode = '10090';
+    receiver_address = '台北市中正區汀州路三段107號二樓';
+    receiver_name = '台灣環境保護聯盟';
+    /*
     if (county == '基隆市') {
         receiver_zipcode = '20048';
         receiver_address = '基隆市仁愛區仁二路81號2樓';
@@ -342,7 +346,7 @@ function update_envelope() {
         receiver_address = '宜蘭縣冬山鄉冬山路170號';
         receiver_name = '宜蘭縣產業總工會';
     }
-
+*/
     $("span#receiver_zipcode").text(receiver_zipcode);
     $("span#receiver_address").text(receiver_address);
     $("span#receiver_name").text(receiver_name + '　　收');
